@@ -19,6 +19,8 @@ export default {
   methods:{
     itemClick(index) {
       this.currentIndex = index;
+      //通过自定义事件把index传到父组件Home
+      this.$emit('tabclick',index)
     }
   },
   props:{
